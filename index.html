@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series de Televisión</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        h1.titulo {
+            background-color: #218c9e;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            color: black;
+        }
+
+        table tbody tr {
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 class="titulo"> TV Series </h1>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <section class="col-md-6 offset-md-1">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series"></tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/serie.js"></script>
+    <script type="module" src="./scripts/dataSeries.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+
+</body>
+
+</html>

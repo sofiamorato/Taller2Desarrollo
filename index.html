@@ -19,16 +19,19 @@
         table tbody tr {
             background-color: #e6e6e6;
         }
+
+        .text-primary {
+            cursor: pointer;
+        }
     </style>
 </head>
 
-
 <body>
-    <h1 class="titulo"> TV Series </h1>
+    <h1 class="titulo">TV Series</h1>
 
     <div class="container-fluid mt-3">
         <div class="row">
-            <section class="col-md-6 offset-md-1">
+            <section class="col-md-7 offset-md-1">
                 <table class="table">
                     <thead>
                         <tr>
@@ -40,14 +43,25 @@
                     </thead>
                     <tbody id="series"></tbody>
                 </table>
+                <p id="average-seasons" class="mt-3"></p>
             </section>
+
+            <div class="col-md-4">
+                <div id="series-detail-card" class="card" style="display: none;">
+                    <img id="series-img" class="card-img-top" src="" alt="Series image">
+                    <div class="card-body">
+                        <h5 id="series-title" class="card-title"></h5>
+                        <p id="series-description" class="card-text"></p>
+                        <a id="series-link" href="#" target="_blank" class="card-link">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script type="module" src="./scripts/serie.js"></script>
     <script type="module" src="./scripts/dataSeries.js"></script>
     <script type="module" src="./scripts/main.js"></script>
-
 </body>
 
 </html>
